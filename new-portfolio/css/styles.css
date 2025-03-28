@@ -84,7 +84,7 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/blue_abstract_background_310971.jpg) no-repeat;
+    background: url(../images/Project-1\ Still\ Life.png) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -109,11 +109,11 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/full-moon-night-sky-starry.jpg) center;
+    background: url(../images/watercolor-artwork.jpg) center;
     background-size: cover;
     content: "";
     display: block;
-    height: 350px;
+    height: 950px;
 }
 .resume-section {
     margin-bottom: 50px;
