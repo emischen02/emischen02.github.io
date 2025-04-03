@@ -152,6 +152,7 @@ footer a:hover {
 }
 .project-item img {
     width: 300px;
+    cursor: pointer;
 }
 @media screen and (min-width:860px) {
     .project-item {
@@ -179,6 +180,29 @@ footer a:hover {
     }
 }
 
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
 
 /* Work Experience
 ------------------------------------*/
@@ -215,6 +239,10 @@ footer a:hover {
 /* FOOTER
 ------------------------------------*/
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background: #222;
     color: #d3d4d6;
 }
@@ -244,6 +272,7 @@ footer {
     footer {
         text-align: center;
         padding: 10px;
+        width: 100%;
     }
 
 }
