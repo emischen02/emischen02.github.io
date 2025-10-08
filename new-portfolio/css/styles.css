@@ -140,6 +140,18 @@ footer a:hover {
 .resume-section h2 {
     border-bottom: 2px dashed #d3d4d6;
 }
+/* Portfolio header background: gradient overlay over artwork */
+.resume header::before {
+    background: linear-gradient(rgba(34,34,34,0.42), rgba(34,34,34,0.18)), url(../images/watercolor-artwork.jpg) center/cover no-repeat;
+    content: "";
+    display: block;
+    height: 420px;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+@media screen and (max-width: 800px){
+    .resume header::before { height: 320px; }
+}
 .download-link {
     position: fixed;
     top: 5px;
@@ -153,7 +165,7 @@ footer a:hover {
 }
 @media screen and (max-width: 500px){
     .resume header::before {
-        height: 200px;
+        height: 220px;
     }
     h1 {
         font-size: 5rem;
