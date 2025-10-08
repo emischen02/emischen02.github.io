@@ -13,6 +13,15 @@ Off-white     #f6f6f6
 /* 
   https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
+:root{
+    --dark-green: #3c8453;
+    --sandy: #bcaa96;
+    --dark-gray: #222222;
+    --light-gray: #d3d4d6;
+    --off-white: #f6f6f6;
+    --content-max-width: 1100px;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* set default to 10px */
@@ -24,12 +33,14 @@ html {
 html, body {
     height: 100%;
 }
+
 body {
-    background: #f6f6f6; 
+    background: var(--off-white);
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.4;
+    font-size: 1.6rem;
+    line-height: 1.45;
+    color: var(--dark-gray);
 }
 h1, h2, h3 {
     font-family: 'Caveat', cursive;
@@ -37,14 +48,21 @@ h1, h2, h3 {
     margin: 0;
 }
 h1 {
-    font-size: 7rem;
-    line-height: 0.85;
+    font-size: 6.4rem;
+    line-height: 0.92;
 }
 h2 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
 }
 h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+}
+
+/* Scale headings a bit on small screens */
+@media screen and (max-width: 500px) {
+    h1 { font-size: 4.8rem; }
+    h2 { font-size: 2.4rem; }
+    h3 { font-size: 1.8rem; }
 }
 
 /* links */
@@ -62,22 +80,28 @@ footer a:hover {
     color: #3c8453;
 }
 .btn {
-    background: #3c8453;
-    color: #f6f6f6;
+    background: var(--dark-green);
+    color: var(--off-white);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: inline-block;
-    padding: 7px;
-    letter-spacing: 0.1em;
+    padding: 10px 14px;
+    letter-spacing: 0.08em;
     line-height: 1;
-    border-radius: 4px;
+    border-radius: 6px;
+    transition: transform 150ms ease, box-shadow 150ms ease, opacity 150ms ease;
+}
+.btn:hover, .btn:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    opacity: 0.98;
 }
 
 .content-wrapper {
     margin: 0 auto;
-    padding: 30px;
-    max-width: 900px;
+    padding: 36px 30px;
+    max-width: var(--content-max-width);
 }
 
 
@@ -93,8 +117,10 @@ footer a:hover {
     flex: 1 0 auto;
 }
 .content-bg {
-    background: rgb(255 255 255 / 0.9);
-    padding: 30px;
+    background: rgb(255 255 255 / 0.92);
+    padding: 28px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(34,34,34,0.06);
 }
 @media screen and (max-width:650px){
     .home .content-wrapper {
@@ -108,13 +134,6 @@ footer a:hover {
 
 /* RESUME
 ------------------------------------*/
-.resume header::before {
-    background: url(../images/watercolor-artwork.jpg) center;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 950px;
-}
 .resume-section {
     margin-bottom: 50px;
 }
@@ -148,11 +167,18 @@ footer a:hover {
 /* Projects
 ------------------------------------*/
 .project-item {
-    margin: 30px 0;
+    margin: 28px 0;
 }
 .project-item img {
-    width: 300px;
+    width: 100%;
+    max-width: 360px;
     cursor: pointer;
+    border-radius: 4px;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.project-item img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 @media screen and (min-width:860px) {
     .project-item {
@@ -160,7 +186,9 @@ footer a:hover {
     }
     .project-item img {
         float: left;
-        margin-right: 20px;
+        margin-right: 22px;
+        width: 320px;
+        max-width: none;
     }
 }
 @media screen and (min-width:650px) and (max-width:859px) {
@@ -183,25 +211,27 @@ footer a:hover {
 #lightbox {
     position: fixed;
     z-index: 1000;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0, 0, 0, 0.8);
+    inset: 0;
+    background-color: rgba(0,0,0,0.0);
     display: none;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 220ms ease;
 }
 
 #lightbox.active {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0,0,0,0.78);
 }
 
 #lightbox img {
-    max-width: 90%;
-    max-height: 80%;
-    padding: 4px;
-    background-color: black;
-    border: 2px solid white;
+    max-width: 92%;
+    max-height: 86%;
+    padding: 6px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.5);
 }
 
 /* Work Experience
@@ -243,8 +273,9 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #222;
-    color: #d3d4d6;
+    background: var(--dark-gray);
+    color: var(--light-gray);
+    padding: 10px 18px;
 }
 .socials {
     list-style-type: none;
@@ -265,7 +296,7 @@ footer {
     footer {
         display: flex;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 12px 36px;
     }
 }
 @media screen and (max-width: 859px){
