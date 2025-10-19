@@ -35,7 +35,7 @@ html, body {
 }
 
 body {
-    background: var(--off-white);
+    background: linear-gradient(135deg, #ffd6ec 0%, #fffcd1 25%, #d4fcff 50%, #e0ffe2 75%, #ffe9d6 100%);
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
@@ -310,4 +310,14 @@ footer {
         width: 100%;
     }
 
+}
+
+.contact-panel {
+    background: rgba(255,255,255,0.80);
+    box-shadow: 0 6px 24px rgba(60, 132, 83, 0.08);
+    border-radius: 12px;
+    max-width: 480px;
+    margin: 56px auto;
+    padding: 36px 24px;
+    backdrop-filter: blur(3px);
 }
