@@ -167,6 +167,19 @@ footer a:hover {
     }
 }
 
+.resume {
+  animation: rainbowBG 16s linear infinite alternate;
+  background-size: 160% 160%;
+}
+@keyframes rainbowBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 
 /* Projects
 ------------------------------------*/
