@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Emis Chen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="resume">
-    <a class="btn download-link" href="Resume (1).pdf">Download PDF</a>
+    <a class="btn download-link" href="Resume (1).pdf">Resume as a PDF</a>
     <!-- //  INTRO  // -->
     <header>
       <div class="content-wrapper">
+        <nav class="guide-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a> |
+          <a href="portfolio.html">Portfolio</a> |
+          <a href="contact.html">Contact</a>
+        </nav>
         <h1>Emis Chen</h1>
         <h2>Interactive Media Artist & Creative Coder</h2>
       </div>
@@ -23,19 +25,26 @@
       <!-- //  PROFILE  // -->
       <section class="resume-section">
         <h2>About this Portfolio</h2>
-        <p>My portfolio brings together my work in interactive media, creative coding, and traditional art to explore how technology and imagination can shape perception. Whether I’m programming projects in Max or creating pieces like my charcoal still life, Game Completionist, or Daydream Room, I aim to blur the line between the digital and physical worlds. My still life studies the quiet beauty of everyday forms, Game Completionist transforms my passion for gaming into a tactile symbol of creativity, and Daydream Room captures the surreal and playful nature of imagination. Across both digital and handmade works, I focus on interactivity, emotion, and discovery—inviting viewers to experience my art not just as images, but as evolving spaces of reflection and connection.</p>
-
-        <a href="index.html">Back to homepage</a>
-      </section>
-
-      <!-- //  EDUCATION & CERTIFICATIONS  // -->
-      <section class="resume-section">
-        <h2>Education</h2>
-
-        <section>
-          <h3>Currently studying Digital Media Art at San Jose State University (Expected Graduation: 2028)</h3>
-          <p>Relevant courses: Ceremics, Beginning Sculpture, Art as System</p>
-        </section>
+        <div class="portfolio-intro">
+          <p>My portfolio brings together my work in interactive media, creative coding, and traditional art to explore how technology and imagination can shape perception. Whether I'm programming projects in <a href="art-103-final.html" class="highlight-link">Max</a> or creating pieces like my <a href="charcoal-drawing.html" class="highlight-link">charcoal still life</a>, <a href="game-completionist.html" class="highlight-link">Game Completionist</a>, or <a href="daydream-room.html" class="highlight-link">Daydream Room</a>, I aim to blur the line between the digital and physical worlds.</p>
+          
+          <div class="featured-works">
+            <div class="work-highlight">
+              <h4>Digital Art</h4>
+              <p>My still life studies the quiet beauty of everyday forms through 3D modeling and digital rendering.</p>
+            </div>
+            <div class="work-highlight">
+              <h4>Interactive Media</h4>
+              <p>Game Completionist transforms my passion for gaming into a tactile symbol of creativity.</p>
+            </div>
+            <div class="work-highlight">
+              <h4>Traditional Art</h4>
+              <p>Daydream Room captures the surreal and playful nature of imagination through watercolor and ink.</p>
+            </div>
+          </div>
+          
+          <p class="portfolio-closing">Across both digital and handmade works, I focus on interactivity, emotion, and discovery—inviting viewers to experience my art not just as images, but as evolving spaces of reflection and connection.</p>
+        </div>
       </section>
 
       <!-- //  PROJECTS  // -->
@@ -46,86 +55,83 @@
         <div class="project-wrapper">
 
           <section class="project-item">
-            <a href="images/Charcol drawing.jpg" class="lightbox">
-              <img src="images/Charcol drawing.jpg" srcset="" alt="description of charcol drawing">
+            <a href="art-75-group-project.html">
+              <img src="images/Art 75 Group Project.png" srcset="" alt="Art 75 Group Project – Glitch and Connectivity">
             </a>
-            <h3>Still Life in Charcoal</h3>
-            <p>Medium: Charcoal on paper</p>
-            <p>Dimensions: 9 x 12 in</p>
-            <p>This piece explores light, shadow, and form through a classic still life setup featuring wine bottles and a glass. The use of charcoal emphasizes texture and tonal contrast, allowing the viewer to feel the quiet atmosphere of the scene. The process was intuitive, focusing on capturing the depth of the composition and the reflective surfaces with expressive shading.</p>
-          </section>
-
-          <section class="project-item">
-            <a href="images/medal of honor.jpg" class="lightbox">
-              <img src="images/medal of honor.jpg" srcset="" alt="description of using wax and metal">
-            </a>
-            <h3>Game Completionist</h3>
-            <p>Medium: Clay and metallic finish</p>
-            <p>Dimensions: 4 x 4 in</p>
-            <p>This sculptural medallion reflects my fascination with gaming culture and achievement. Inspired by the idea of completion and dedication, the piece transforms a personal passion into a physical object that symbolizes effort, patience, and reward. The textured surface and circular design suggest both the tactile nature of play and the timeless appeal of collecting and mastery.</p>
-          </section>
-
-          <section class="project-item">
-            <a href="images/watercolor-artwork.jpg" class="lightbox">
-              <img src="images/watercolor-artwork.jpg" srcset="" alt="description of watercolor-artwork">
-            </a>
-            <h3>Daydream Room</h3>
-            <p>Medium: Watercolor and ink on paper</p>
-            <p>Dimensions: 9 x 12 in</p>
-            <p>In this surreal interior scene, I merge imagination and memory to create a dreamlike environment where the sky becomes the walls and the sun shines indoors. The checkerboard ceiling and colorful floorboards evoke a sense of playfulness and escape. Through this piece, I explore how personal spaces can reflect both our inner worlds and our desire for comfort and creativity.</p>
-          </section>
-
-          <section class="project-item">
-            <a href="images/Art 103 Final Screenshot.png" class="lightbox">
-              <img src="images/Art 103 Final Screenshot.png" srcset="" alt="description of Piano & Violin Digital Performance">
-              <a href="images/Art 103 Final/Art 103 Final.maxpat" download>Download Art 103 Final Max Patch</a>
-            </a>
-            <h3>Art 103 Final – Piano & Violin Digital Performance</h3>
-            <p>Medium: Max/MSP/Jitter, digital 3D models</p>
-            <p>Dimensions: Variable (digital composition)</p>
-            <p>This multimedia piece combines custom 3D character animation with real-time audio, performed using Max/MSP/Jitter. By synchronizing virtual musicians with original music, the work explores the relationship between software-based creation and performative interactivity. The vibrant blue background and expressive digital figures highlight the intersection of code, music, and visual storytelling.</p>
-          </section>
-
-          <section class="project-item">
-            <a href="images/Black and White Photography Photograms.jpg" class="lightbox">
-              <img src="images/Black and White Photography Photograms.jpg" srcset="" alt="description of Photography Photograms">
-            </a>
-            <h3>Black and White Photograms</h3>
-            <p>Medium: Darkroom photogram on photographic paper</p>
-            <p>Dimensions: Each image approx. 8 x 10 in</p>
-            <p>These photograms were created in the darkroom by arranging objects directly on photographic paper and exposing them to light. The result is a unique composition of silhouettes and textures, exploring the interaction of light, transparency, and material. The layering of fabric and geometric motifs evokes both abstraction and personal narrative—inviting the viewer to interpret everyday forms in a new light. Each piece is original, not reproducible through digital means, and reflects the playful experimentation central to my practice.</p>
-          </section>
-
-          <section class="project-item">
-            <a href="images/Project-1 Still Life.png" class="lightbox">
-              <img src="images/Project-1 Still Life.png" srcset="" alt="description of 3D modeling">
-            </a>
-            <h3>Project-1: Still Life (3D Study)</h3>
-            <p>Medium: 3D modeling, digital rendering</p>
-            <p>Dimensions: Variable (rendered image)</p>
-            <p>This rendered still life combines form, material, and lighting study in a 3D graphics environment. Marble, ceramic, and glass textures are simulated digitally, with a glowing interior light and a geometric background. The piece invites viewers to contemplate the relationship between traditional artistic motifs and digital rendering.</p>
-          </section>
-
-          <section class="project-item">
-            <a href="images/Art 75 Group Project.png" class="lightbox">
-              <img src="images/Art 75 Group Project.png" srcset="" alt="description of Video Art">
-              <a href="https://www.youtube.com/watch?v=6YwJontjh00">Art 75 Group Project 1</a>
-            </a>
-            <h3>Art 75 Group Project – Glitch and Connectivity</h3>
+            <h3><a href="art-75-group-project.html">Art 75 Group Project – Glitch and Connectivity</a></h3>
             <p>Medium: Video art, digital media collaboration</p>
             <p>Dimensions: 1080 x 720 px (single frame, video duration: 4:50)</p>
-            <p>This collaborative video explores concepts of connection, distortion, and digital presence. Overlaying smartphone interaction with glitch art effects, the group project examines how technology shapes and warps our perception of everyday communications. Vivid colors and fragmented imagery represent both the promise and breakdown of human connection in the digital age.</p>
+            <p>This collaborative video explores concepts of connection, distortion, and digital presence. Overlaying smartphone interaction with glitch art effects, the group project examines how technology shapes and warps our perception of everyday communications.</p>
           </section>
 
           <section class="project-item">
-            <a href="images/It_s Just a Game_ why you Have to be Mad_.png" class="lightbox">
-              <img src="images/It_s Just a Game_ why you Have to be Mad_.png" srcset="" alt="description of gif twinery">
+            <a href="just-a-game.html">
+              <img src="images/Video games from a headache.png" srcset="" alt="Video games from a headache">
             </a>
-            <a href="It_s Just a Game_ why you Have to be Mad_.html">Art 75 Group Project 2</a>
-            <h3>It’s Just a Game, why you Have to be Mad?</h3>
+            <h3><a href="just-a-game.html">Video games from a headache</a></h3>
             <p>Medium: Twine interactive fiction</p>
             <p>Dimensions: Variable (browser-based)</p>
-            <p>This interactive narrative invites players into the emotional turbulence of gaming and daily routines. Built using Twine, the story branches based on player choices, exploring isolation, frustration, and the peculiar ways in which virtual and real-world stressors overlap. The piece highlights how game culture can impact our moods and the subtle strangeness of the mundane.</p>
+            <p>This interactive narrative invites players into the emotional turbulence of gaming and daily routines. Built using Twine, the story branches based on player choices, exploring isolation, frustration, and the peculiar ways in which virtual and real-world stressors overlap.</p>
+          </section>
+
+          <section class="project-item">
+            <a href="still-life-3d.html">
+              <img src="images/Project-1 Still Life.png" srcset="" alt="Project-1: Still Life (3D Study)">
+            </a>
+            <h3><a href="still-life-3d.html">Project-1: Still Life (3D Study)</a></h3>
+            <p>Medium: 3D modeling, digital rendering</p>
+            <p>Dimensions: Variable (rendered image)</p>
+            <p>This rendered still life combines form, material, and lighting study in a 3D graphics environment. Marble, ceramic, and glass textures are simulated digitally, with a glowing interior light and a geometric background.</p>
+          </section>
+
+          <section class="project-item">
+            <a href="art-103-final.html">
+              <img src="images/Art 103 Final Screenshot.png" srcset="" alt="Art 103 Final – Piano & Violin Digital Performance">
+            </a>
+            <h3><a href="art-103-final.html">Art 103 Final – Piano & Violin Digital Performance</a></h3>
+            <p>Medium: Max/MSP/Jitter, digital 3D models</p>
+            <p>Dimensions: Variable (digital composition)</p>
+            <p>This multimedia piece combines custom 3D character animation with real-time audio, performed using Max/MSP/Jitter. By synchronizing virtual musicians with original music, the work explores the relationship between software-based creation and performative interactivity.</p>
+          </section>
+
+          <section class="project-item">
+            <a href="game-completionist.html">
+              <img src="images/medal of honor.jpg" srcset="" alt="Game Completionist">
+            </a>
+            <h3><a href="game-completionist.html">Game Completionist</a></h3>
+            <p>Medium: Clay and metallic finish</p>
+            <p>Dimensions: 4 x 4 in</p>
+            <p>This sculptural medallion reflects my fascination with gaming culture and achievement. Inspired by the idea of completion and dedication, the piece transforms a personal passion into a physical object that symbolizes effort, patience, and reward.</p>
+          </section>
+
+          <section class="project-item">
+            <a href="charcoal-drawing.html">
+              <img src="images/Charcol drawing.jpg" srcset="" alt="Still Life in Charcoal">
+            </a>
+            <h3><a href="charcoal-drawing.html">Still Life in Charcoal</a></h3>
+            <p>Medium: Charcoal on paper</p>
+            <p>Dimensions: 9 x 12 in</p>
+            <p>This piece explores light, shadow, and form through a classic still life setup featuring wine bottles and a glass. The use of charcoal emphasizes texture and tonal contrast, allowing the viewer to feel the quiet atmosphere of the scene.</p>
+          </section>
+
+          <section class="project-item">
+            <a href="daydream-room.html">
+              <img src="images/watercolor-artwork.jpg" srcset="" alt="Daydream Room">
+            </a>
+            <h3><a href="daydream-room.html">Daydream Room</a></h3>
+            <p>Medium: Watercolor and ink on paper</p>
+            <p>Dimensions: 9 x 12 in</p>
+            <p>In this surreal interior scene, I merge imagination and memory to create a dreamlike environment where the sky becomes the walls and the sun shines indoors. The checkerboard ceiling and colorful floorboards evoke a sense of playfulness and escape.</p>
+          </section>
+
+          <section class="project-item">
+            <a href="photograms.html">
+              <img src="images/Black and White Photography Photograms.jpg" srcset="" alt="Black and White Photograms">
+            </a>
+            <h3><a href="photograms.html">Black and White Photograms</a></h3>
+            <p>Medium: Darkroom photogram on photographic paper</p>
+            <p>Dimensions: Each image approx. 8 x 10 in</p>
+            <p>These photograms were created in the darkroom by arranging objects directly on photographic paper and exposing them to light. The result is a unique composition of silhouettes and textures, exploring the interaction of light, transparency, and material.</p>
           </section>
 
         </div>
